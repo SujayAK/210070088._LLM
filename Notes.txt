@@ -1,0 +1,48 @@
+Machine Learning 
+
+Machine learning creates algorithms that progressively improve at a specific task by learning from data. Unlike brute force methods, they don't require explicit programming for every situation.This learning process is guided by a feedback mechanism called a loss function, which helps the algorithm adjust its internal parameters to achieve more accurate results. It can be mainly classified into 3 types: supervised learning, unsupervised learning, and reinforcement learning. Supervised learning involves using labeled data to train models.The accuracy of the model is improved by comparing with the predicted and target output.
+Unsupervised learning, on the other hand, deals with unlabeled data to find patterns, clustering, .This type of learnig is proned to less accurate results,but is very useful when the labelled data is unkowned to model.Reinforcement learning is based on feedback and rewards.Reinforcement learning (RL) is a distinct paradigm within machine learning focused on enabling an agent to learn optimal behavior in an environment through trial and interaction.
+
+A machine learning model geneeally involves a dataset, predictor function, and a loss function, which minimizes the difference between the output of predictor function and target variable.One of the fundamental questions in machine learning is how to extract patterns from data and analyze it to make intelligent predictions. This process involves using various machine learning algorithms designed to identify and learn these patterns.Thse usage of algorithms depends on the requirement, nature of the task iteslf.
+Some of the commonly used ML algorithms are - 
+Logistic Regression: This is a classification algorithm, which gives the probability of belongness of particular element to class.
+Linear Regression:  A regression algorithm used to predict continuous outcomes. Despite being considered a simple algorithm, linear regression is powerful when applied correctly.
+Both of these algorithms can be extended to multi-dimensions.
+
+
+Deep Learning 
+Deep Learning involves neurons, which can be extended to deep Neural netowrks, connected by mulitple hidden layers.Some of ML models like perceptron model,logistic regression can be modelled using Neural networks. A single Neuron consists of mulitple input and a bias , which undergoes dot product, and then followed by activation function, whose functionality can be changes based on the task.
+There could be many types of activation function like step up, tanh ,ReLu and sigmoid function.Activation fuctions suggest whether to activate the neuron or not, based the output of the activation function.
+
+In Multi Layer NN, there are mainly three types of layer-
+-> Input Layer (Visible Layer): The model starts with raw input data, such as pixel values from an image.The input data is usually flatten out in this case.
+-> Hidden Layers: The input data is passed through multiple hidden layers, where each layer extracts increasingly complex features
+-> Output Layer: Finally, the model uses the extracted features to make a prediction.
+
+Backpropogation
+The weights in the hidden needs to alter, using partial differentiation.The output of the NN model is passed to the loss function, then derivative of the loss is computed, to reinitliaze the weight using some learning  rate, such that the rate of the loss function is minimized.(or until the loss function convergences)
+
+The human nervous system comprises cells called neurons, which are interconnected via axons and dendrites. Dendrites act as input terminals that receive signals (e.g., X1, X2, X3, X4) from other neurons, while the axon serves as an output wire that transmits signals to other neurons. Synapses are the connections between dendrites and axons that facilitate signal transmission. In the realm of artificial neural networks, perceptrons are inspired by biological neurons and serve as the building blocks of more complex models. Perceptrons perform simple binary classifications based on the weighted sum of inputs and an activation function.  In perceptron inputs (X1, X2, X3, X4) are analogous to dendrites, perceptrons receive multiple input signals. Each input is associated with a weight (W1, W2, W3, W4), which signifies the importance or strength of the respective input. The perceptron calculates the weighted sum of the inputs, similar to the integration of signals in biological neurons. The weighted sum is then passed through an activation function (e.g., step function, sigmoid), which determines the output of the perceptron. The perceptron's output, analogous to the signal transmitted by an axon, is typically a binary value (0 or 1) indicating the classification result. This transition from biological neurons to perceptrons marks the foundation of artificial neural networks
+
+Learning Objective:
+  - Adjust the weights (W1 to WD) and bias (b) to minimize prediction errors.
+  - Achieved through iterative processes such as gradient descent.
+
+ Gradient Descent:
+  - Gradient descent is a fundamental optimization technique extensively employed in machine learning to refine model parameters iteratively. At its core, gradient descent aims to minimize a specified loss function, which quantifies the disparity between predicted and actual outcomes.
+  - Adjusts weights and biases in the direction that reduces the error in prediction. Central to gradient descent is the calculation of gradients, which indicate the direction and magnitude of the steepest ascent of the loss function. In simpler terms, gradients guide the algorithm in determining how much and in which direction to adjust each weight to reduce the loss. This adjustment is carried out iteratively through updates to the weights based on the computed gradients.
+
+Training Process:
+  - Feed the input data through the perceptron.The weights (W) and biases (b) associated with each neuron are initialized randomly and then adjusted during training using optimization algorithms like gradient descent. 
+  - Compare the predicted output (Y_pred) with the actual output (Y_true).The goal is to minimize the difference between predicted outputs and actual targets by adjusting these parameters
+  - Update weights and bias using the gradient descent algorithm based on the prediction error.
+
+Convergence:
+  - The iterative process continues until a stopping criterion is met, such as a predetermined number of iterations or when the loss function converges to a satisfactory minimum. Geometrically, gradient descent can be likened to navigating a hilly terrain, where the goal is to descend to the lowest valley (minimum of the loss function) by repeatedly moving in the direction opposite to the gradient.
+  - Leads to a perceptron that can make accurate predictions on unseen data.
+
+Output Classification:
+For tasks like binary classification or multi-class classification the output layer's activation function and interpretation may vary:
+- For binary classification, a sigmoid activation function is often used, with outputs interpreted as probabilities.
+- For multi-class classification, softmax activation is typically used to produce a probability distribution across multiple classes.
+
